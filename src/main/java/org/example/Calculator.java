@@ -25,7 +25,7 @@ public class Calculator {
         scanner.close();
     }
 
-    private static double executeCalculation(String operator, double operand) {
+    private static double executeCalculation(String operator, double operand) throws UnsupportedOperationException {
         return switch (operator) {
             case "+" -> executeAddition(operand);
             case "-" -> executeSubtraction(operand);
