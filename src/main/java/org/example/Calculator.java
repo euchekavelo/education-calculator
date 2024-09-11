@@ -35,7 +35,7 @@ public class Calculator {
         };
     }
 
-    private static double executeDivision(double operand) {
+    private static double executeDivision(double operand) throws IllegalArgumentException {
         if (operand == 0.0d) {
             throw new IllegalArgumentException("Неккоректное значение операнда. Деление на ноль недопустимо.");
         }
